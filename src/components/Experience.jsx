@@ -4,9 +4,8 @@ const Experience = () => (
   <section className="section">
     <h3 className="section-title">Experiencia Laboral</h3>
     <ul>
-      <li>Google Web Developer</li>
-      <li>CVG Alcasa</li>
-      <li>Microsoft Data Analyst</li>
+      <li>Farmifarma - Gestion de inventario</li>
+      <li>Inmolider - Diseñador de flyers </li>
     </ul>
   </section>
 );

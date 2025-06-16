@@ -20,11 +20,12 @@ const Profile = () => (
       <div style={{ color: "#fff", fontWeight: 600, fontSize: 18, marginBottom: 10 }}>Informacion Personal</div>
       <div style={{ display: "flex", flexWrap: "wrap", gap: 32, justifyContent: "flex-start" }}>
         <div style={{ minWidth: 180, color: "#b0b8c1", fontSize: 15 }}>
-          <div><strong>EDAD:</strong> 25</div>
-          <div style={{ marginTop: 12 }}><strong>CORREO:</strong> jagarciar.info@gmail.com</div>
+          <div><strong>Edad:</strong> 25</div>
+          <div style={{ marginTop: 12 }}><strong>Correo:</strong> jagarciar.info@gmail.com</div>
         </div>
         <div style={{ minWidth: 320, color: "#b0b8c1", fontSize: 15 }}>
-          <div><strong>Direccion:</strong> Urbanizacion Villa Betania, Manzana 46 Casa 41</div>
+          <div><strong>Direccion:</strong> Urbanizacion Villa Colombia, Manzana 46, Casa 41, Guayana, Venezuela</div>
+          <div style={{ marginTop: 12 }}><strong>Telefono:</strong> +58 412 988 68 04</div>
         </div>
       </div>
     </section>
