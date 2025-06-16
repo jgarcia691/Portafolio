@@ -18,7 +18,7 @@ const projects = [
   {
     title: "Plataforma de almacenamiento de Tesis para la UNEG",
     image: "https://placehold.co/300x180?text=Plataforma+de+almacenamiento+de+Tesis",
-    description: "Juego de plataformas basado en el exito de Super Mario Bros, con mecanicas de multijugador local para 2 jugadores",
+    description: "Plataforma web diseñada para el almacenamiento de trabajos de grado correspondientes a la carrera de ingenieria informatica, para uso exclusivo de la coordinacion de la carrera",
     technologies: ["react", "nodejs", "sqlite"],
     github: "https://github.com/jgarcia691/Server_Tesis"
   },
