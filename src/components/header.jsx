@@ -1,11 +1,21 @@
 import React from "react";
 
-const Header = () => (
+const Header = ({ onTab, tab }) => (
   <header>
     <div style={{ fontWeight: "bold", fontSize: "1.1rem" }}>Portafolio</div>
     <nav>
-      <a href="#about" style={{ color: "#b0b8c1", marginRight: 24, textDecoration: "none" }}>Sobre Mí</a>
-      <a href="#contact" style={{ color: "#b0b8c1", textDecoration: "none" }}>Contacto</a>
+      <a
+        onClick={() => onTab("about")}
+        style={{ color: tab === "about" ? "#fff" : "#b0b8c1", marginRight: 24, textDecoration: "none", fontWeight: tab === "about" ? 700 : 400, cursor: "pointer" }}
+      >
+        Sobre Mí
+      </a>
+      <a
+        onClick={() => onTab("contact")}
+        style={{ color: tab === "contact" ? "#fff" : "#b0b8c1", textDecoration: "none", fontWeight: tab === "contact" ? 700 : 400, cursor: "pointer" }}
+      >
+        Contacto
+      </a>
     </nav>
   </header>
 );

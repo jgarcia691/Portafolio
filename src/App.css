@@ -80,20 +80,42 @@ header {
 
 .social-links {
   display: flex;
-  gap: 24px;
+  gap: 48px;
   justify-content: center;
   margin-top: 16px;
 }
 
 .social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #b0b8c1;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   transition: color 0.2s;
+  gap: 8px;
 }
 
 .social-link:hover {
   color: #fff;
+}
+
+.social-icon-circle {
+  background: #223040;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.social-icon-circle svg,
+.social-icon-circle i {
+  font-size: 22px !important;
+  color: #fff;
+  fill: #fff;
 }
 
 .project-card {
@@ -113,4 +135,69 @@ header {
 .project-card:active {
   transform: scale(0.97);
   box-shadow: 0 2px 8px #0002;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 700px) {
+  .container {
+    padding: 12px 2vw;
+    max-width: 100vw;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 10px;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .section {
+    padding: 14px 6px;
+    margin-bottom: 16px;
+  }
+  .profile-img {
+    width: 64px !important;
+    height: 64px !important;
+    margin-bottom: 8px !important;
+  }
+  .social-links {
+    gap: 18px;
+  }
+  .skills-grid {
+    gap: 6px;
+  }
+  .project-card {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 2px 0;
+  }
+  header {
+    font-size: 0.98rem;
+    padding: 8px 2vw;
+    border-radius: 0;
+  }
+  .section {
+    border-radius: 0;
+    padding: 8px 2vw;
+  }
+  .profile-img {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .social-icon-circle {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 2px;
+  }
+  .social-icon-circle svg,
+  .social-icon-circle i {
+    font-size: 16px !important;
+  }
+  .skills-grid {
+    flex-direction: column;
+    gap: 2px;
+  }
 }

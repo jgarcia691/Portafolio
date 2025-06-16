@@ -2,8 +2,7 @@ import React from "react";
 
 const skills = [
   "Python", "JavaScript", "HTML/CSS",
-  "React", "C/C++", "Kotlin",
-  "React Native", "Next.js", "Laravel"
+  "React", "C/C++", "Kotlin"
 ];
 
 const Skills = () => (

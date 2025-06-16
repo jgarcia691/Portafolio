@@ -6,42 +6,42 @@ const projects = [
     image: "https://placehold.co/300x180?text=Curriculum",
     description: "Pagina Web Personal donde subo mis proyectos y mis habilidades como programador informatico",
     technologies: ["react", "css3", "html5"],
-    github: "https://github.com/usuario/curriculum-web"
+    github: "https://github.com/jgarcia691/Portafolio"
   },
   {
     title: "AI Transcriptor",
     image: "https://placehold.co/300x180?text=AI+Transcriptor",
     description: "Aplicacion movil que transcribe audio a texto y lo guarda en base de datos no relacional. Dando opcion al usuario en obtener ese texto en formato txt o pdf, o bien obtener un resumen de hecho con inteligencia artificial a traves del LLM llamado Gemini",
     technologies: ["python", "mongodb"],
-    github: "https://github.com/usuario/ai-transcriptor"
+    github: "https://github.com/jgarcia691/Ai-Transcriptor"
   },
   {
-    title: "Super Mario Bros (JAVA EDITION)",
-    image: "https://placehold.co/300x180?text=Mario+Java",
-    description: "Evaluación adaptativa que se ajusta al rendimiento del estudiante y proporciona retroalimentación específica.",
-    technologies: ["java"],
-    github: "https://github.com/usuario/super-mario-java"
+    title: "Plataforma de almacenamiento de Tesis para la UNEG",
+    image: "https://placehold.co/300x180?text=Plataforma+de+almacenamiento+de+Tesis",
+    description: "Juego de plataformas basado en el exito de Super Mario Bros, con mecanicas de multijugador local para 2 jugadores",
+    technologies: ["react", "nodejs", "sqlite"],
+    github: "https://github.com/jgarcia691/Server_Tesis"
   },
   {
-    title: "TeamViewer Kotlin",
+    title: " TeamViewer Kotlin",
     image: "https://placehold.co/300x180?text=TeamViewer+Kotlin",
-    description: "Plataforma colaborativa que permite a estudiantes y profesores trabajar juntos en proyectos y tareas en tiempo real.",
+    description: "Aplicacion movil que permite la conexion remota entre 2 dispositivos android, permitiendo la transmision de pantalla de un dispositivo a otro",
     technologies: ["kotlin", "android"],
     github: "https://github.com/usuario/teamviewer-kotlin"
   },
   {
-    title: "Foodigo MAPA INTERACTIVO",
-    image: "https://placehold.co/300x180?text=Foodigo",
-    description: "Desarrollo de juegos educativos que sean divertidos y atractivos para estudiantes de todas las edades.",
-    technologies: ["react", "NestJS", "mongodb"],
-    github: "https://github.com/usuario/foodigo"
+    title: "Agente de Reconocimiento para el juego Puzzle 8",
+    image: "https://placehold.co/300x180?text=Puzzle+8",
+    description: "Aplicacion hecha en python que permite la busqueda de soluciones para el juego Puzzle 8, utilizando el algoritmo A* con busqueda heuristica y busqueda en amplitud para encontrar la solucion mas rapida",
+    technologies: ["python"],
+    github: "https://github.com/jgarcia691/Puzzle8"
   },
   {
-    title: "Spotify Clone",
-    image: "https://placehold.co/300x180?text=Spotify+Clone",
-    description: "Creación de experiencias de realidad virtual inmersiva para aplicaciones educativas, permitiendo a los estudiantes explorar y aprender de una manera nueva.",
-    technologies: ["react", "threejs", "nodejs"],
-    github: "https://github.com/usuario/spotify-clone"
+    title: "Batalla Naval",
+    image: "https://placehold.co/300x180?text=Batalla+Naval",
+    description: "Juego de batalla naval, con una interfaz grafica que permite la seleccion de coordenadas para disparar, y la visualizacion de las barcos y los disparos. Con posibilidad de jugar contra la maquina, contra un amigo o una nueva mecanica de batallas de hasta 4 jugadores",
+    technologies: ["react", "nodejs"],
+    github: "https://github.com/jgarcia691/Backend_BatallaNaval"
   }
 ];
 
@@ -50,14 +50,15 @@ const techIcons = {
   css3: <i className="devicon-css3-plain colored" title="CSS3"></i>,
   html5: <i className="devicon-html5-plain colored" title="HTML5"></i>,
   python: <i className="devicon-python-plain colored" title="Python"></i>,
-  tensorflow: <i className="devicon-tensorflow-original colored" title="TensorFlow"></i>,
-  java: <i className="devicon-java-plain colored" title="Java"></i>,
-  swing: <span title="Swing">🎨</span>,
+  //tensorflow: <i className="devicon-tensorflow-original colored" title="TensorFlow"></i>,
+  //java: <i className="devicon-java-plain colored" title="Java"></i>,
+  //swing: <span title="Swing">🎨</span>,
   kotlin: <i className="devicon-kotlin-plain colored" title="Kotlin"></i>,
   android: <i className="devicon-android-plain colored" title="Android"></i>,
   nodejs: <i className="devicon-nodejs-plain colored" title="Node.js"></i>,
   mongodb: <i className="devicon-mongodb-plain colored" title="MongoDB"></i>,
-  threejs: <i className="devicon-threejs-original colored" title="Three.js"></i>
+  sqlite: <i className="devicon-sqlite-plain colored" title="SQLite"></i>,
+  //threejs: <i className="devicon-threejs-original colored" title="Three.js"></i>
 };
 
 const Projects = () => {
