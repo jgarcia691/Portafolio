@@ -3,15 +3,36 @@ import React, { useState } from "react";
 const Contact = () => {
   const [form, setForm] = useState({ nombre: "", email: "", mensaje: "" });
   const [enviado, setEnviado] = useState(false);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    setEnviado(true);
-    // Aquí podrías agregar lógica para enviar el formulario
+    setLoading(true);
+    setError(null);
+    setEnviado(false);
+    try {
+      const res = await fetch("https://backend-portafolio-three.vercel.app/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          from: form.email,
+          subject: `Consulta de ${form.nombre}`,
+          text: form.mensaje
+        })
+      });
+      if (!res.ok) throw new Error("No se pudo enviar el mensaje");
+      setEnviado(true);
+      setForm({ nombre: "", email: "", mensaje: "" });
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -100,15 +121,17 @@ const Contact = () => {
             fontSize: 16,
             margin: "0 auto",
             marginTop: 10,
-            cursor: "pointer"
+            cursor: loading ? "not-allowed" : "pointer"
           }}
+          disabled={loading}
         >
-          Enviar
+          {loading ? "Enviando..." : "Enviar"}
         </button>
         {enviado && <div style={{ color: "#4fd1c5", marginTop: 10 }}>¡Mensaje enviado! Pronto me pondré en contacto contigo.</div>}
+        {error && <div style={{ color: "red", marginTop: 10 }}>{error}</div>}
       </form>
     </section>
   );
 };
 
-export default Contact; 
+export default Contact;
