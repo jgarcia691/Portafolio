@@ -7,7 +7,6 @@ const techIcons = {
   html5: <i className="devicon-html5-plain colored" title="HTML5"></i>,
   python: <i className="devicon-python-plain colored" title="Python"></i>,
   kotlin: <i className="devicon-kotlin-plain colored" title="Kotlin"></i>,
-  android: <i className="devicon-android-plain colored" title="Android"></i>,
   nodejs: <i className="devicon-nodejs-plain colored" title="Node.js"></i>,
   mongodb: <i className="devicon-mongodb-plain colored" title="MongoDB"></i>,
   sqlite: <i className="devicon-sqlite-plain colored" title="SQLite"></i>,
